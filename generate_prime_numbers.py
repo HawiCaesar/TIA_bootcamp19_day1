@@ -7,10 +7,10 @@ def generate_prime_numbers_asymptotic(last_number):
 	prime_number_list = []
 
 	if last_number < 0:
-		return "Only postive integers are allowed"
+		raise ValueError("Only postive integers are allowed")
 
 	elif last_number < 2:
-		return "Numbers below the number you have entered do not have prime numbers"
+		return "Numbers below 2 are not prime numbers"
 
 	else:
 
