@@ -18,6 +18,10 @@ class TestPrimeNumberGeneration(unittest.TestCase):
 		with self.assertRaises(ValueError):
 			generate_prime_numbers_asymptotic(-20)
 
+	def test_input_must_be_integer(self):
+		with self.assertRaises(TypeError):
+			generate_prime_numbers_asymptotic("example")
+
 
 if __name__ == '__main__':
 	unittest.main()
