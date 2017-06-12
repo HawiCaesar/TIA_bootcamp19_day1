@@ -1,9 +1,13 @@
 """
 Generate prime numbers from 0 to n with asymtotic analysis
 
+Assumption is that each time their is an iteration, a constant time taken is presumed
+Say there will be 20 iterations, 20 units of time will be executed
+
 """
 
 def generate_prime_numbers_asymptotic(last_number):
+	
 	prime_number_list = []
 
 	if isinstance(last_number, int):
@@ -25,11 +29,11 @@ def generate_prime_numbers_asymptotic(last_number):
 				else:
 					prime_number_list.append(number)
 
-
-			return prime_number_list
-
 	else:
 		raise TypeError("Please enter Integers only. Strings/Characters are not allowed with this function.")
+
+
+	return prime_number_list
 
 
 
