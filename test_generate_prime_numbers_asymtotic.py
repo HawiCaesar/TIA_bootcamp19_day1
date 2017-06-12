@@ -27,6 +27,10 @@ class TestPrimeNumberGeneration(unittest.TestCase):
 	def test_result_returned_is_list(self):
 		self.assertIsInstance(generate_prime_numbers_asymptotic(30), list, "Prime numbers must be in a list")
 
+	# If N is a prime number it is to be included in list
+	def test_n_is_included_in_list(self):
+		self.assertEqual(generate_prime_numbers_asymptotic(13), [2,3,5,7,11,13], "N is included in list")
+
 
 if __name__ == '__main__':
 	unittest.main()
