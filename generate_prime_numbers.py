@@ -1,8 +1,11 @@
 """
 Generate prime numbers from 0 to n with asymtotic analysis
 
-Assumption is that each time their is an iteration, a constant time taken is presumed
+An assumption with this analysis is that each time their is an iteration, a constant time taken is presumed
 Say there will be 20 iterations, 20 units of time will be executed
+
+Worst case scenario for nested loops is O(N^2) meaning the performance of this algotrithm is 
+directly propotional to the square of the input
 
 """
 
